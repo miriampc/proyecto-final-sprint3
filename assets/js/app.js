@@ -31,7 +31,6 @@ window.addEventListener("scroll", function(){
 }, false);
 
 //Validaciones formulario
-
 var inputMsj=[
   {title:"Debe iniciar con 9 y tener 9 digitos"},
   {title:"Solo acepta letras, la primera debe ser mayuscula"},
@@ -44,5 +43,4 @@ inputMsj.forEach(function(e,i){
     input[i].setAttribute("title",e.title);
     input[i].classList.add("verify");
   });
-
 });
