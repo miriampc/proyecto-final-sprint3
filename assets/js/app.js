@@ -44,7 +44,5 @@ inputMsj.forEach(function(e,i){
     input[i].setAttribute("title",e.title);
     input[i].classList.add("verify");
   });
-  // input[i].addEventListener("focus",function(){
-  //   input[i].classList.remove("verify");
-  // });
+  
 });
