@@ -7,23 +7,21 @@
   <title>Lyft</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 </head>
 <body>
   <form action="">
     <video src="assets/images/hero-video.mp4"></video>
-    <header>
+    <header id="nav-background">
       <nav class="left logo">
-        <img src="assets/images/logo-white.png" alt="logo-lyft">
+        <img id="img-logo" src="assets/images/logo-white.png" alt="logo-lyft">
       </nav>
       <nav class="right menu">
         <ul>
-          <li><a href="">Drive</a></li>
-          <li><a href="">Explore</a><i class="material-icons">&#xE313;</i></li>
-          <li><a href="">Help</a></li>
-          <li><span>Log in</span></li>
-          <li><span class="hidden">Sign up</span></li>
+          <li><a href="" class="nav-link">Drive</a></li>
+          <li><a href="" class="nav-link">Explore</a></li>
+          <li><a href="" class="nav-link">Help</a></li>
+          <li><span id="login" class="nav-link">Log in</span></li>
+          <li><span id="signup" class="color-pink hidden">Sign up</span></li>
         </ul>
       </nav>
     </header>
@@ -32,13 +30,13 @@
         <p class="title title-color">TURN MILES</p>
         <p class="title title-color">INTO MONEY</p>
         <p class="subt title-color">SIGN UP TO DRIVE WITH LYFT.</p>
-        <input type="text" id="phone" placeholder="Phone number">
-        <div class="input-box">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="City">
+        <input id="phone" class="input-box" type="text" placeholder="Phone number" pattern="^([9]\d{8})" maxlength="9" required>
+        <div class="oculto">
+          <input class="input-box" type="text" placeholder="Name" pattern="[^a-zá-ú-0-9@.,:/=\s]+([a-zá-ú ]{2,})" required >
+          <input class="input-box" type="email" placeholder="Email" pattern="([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})" required>
+          <input class="input-box" type="text" placeholder="City" pattern="[^a-zá-ú-0-9@.,:/=\s]+([a-zá-ú ]{2,})" required>
         </div>
-        <input type="button" name="" value="Become a driver">
+        <input type="submit" name="" value="Become a driver">
         <a href="#">Sign up to ride</a>
         <p class="size-small">Already applied? Check the status of your application here.</p>
         <p class="size-small">Earn money for inviting friends to drive. Learn more</p>
@@ -97,24 +95,24 @@
     <footer class="">
       <article class="footer-nav">
         <p class="bold">LOG IN</p>
-        <p class="parrafo-normal">Help</p>
-        <p class="parrafo-normal">Cities</p>
-        <p class="parrafo-normal">Airports</p>
-        <p class="parrafo-normal">Fare Estimate</p>
+        <a href="" class="parrafo-normal">Help</a>
+        <a href="" class="parrafo-normal">Cities</a>
+        <a href="" class="parrafo-normal">Airports</a>
+        <a href="" class="parrafo-normal">Fare Estimate</a>
       </article>
       <article class="footer-nav">
         <p class="bold">LOG IN</p>
-        <p class="parrafo-normal">Help</p>
-        <p class="parrafo-normal">Cities</p>
-        <p class="parrafo-normal">Airports</p>
-        <p class="parrafo-normal">Fare Estimate</p>
+        <a href="" class="parrafo-normal">Help</a>
+        <a href="" class="parrafo-normal">Cities</a>
+        <a href="" class="parrafo-normal">Airports</a>
+        <a href="" class="parrafo-normal">Fare Estimate</a>
       </article>
       <article class="footer-nav">
         <p class="bold">LOG IN</p>
-        <p class="parrafo-normal">Help</p>
-        <p class="parrafo-normal">Cities</p>
-        <p class="parrafo-normal">Airports</p>
-        <p class="parrafo-normal">Fare Estimate</p>
+        <a href="" class="parrafo-normal">Help</a>
+        <a href="" class="parrafo-normal">Cities</a>
+        <a href="" class="parrafo-normal">Airports</a>
+        <a href="" class="parrafo-normal">Fare Estimate</a>
       </article>
       <article class="right footer-nav">
         <a href=""><img src="assets/images/apple-store.svg" alt=""></a>

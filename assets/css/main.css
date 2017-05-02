@@ -37,35 +37,47 @@ p{
 .hidden{
   display: none;
 }
+.menu{
+  width: 50%;
+}
+.color-pink{
+  color: #ff00bf;
+  border: 1px solid #ff00bf;
+}
+.color-white{
+  background: #fff;
+}
+.color-blue{
+  color: #333447;
+}
 .logo{
   margin: 2% 7%;
-}
-.menu{
-  width: 45%;
 }
 .logo img{
   width: 70px;
   height: auto;
 }
- ul li{
-   list-style: none;
-   display: inline-block;
-   margin: 4% 3%;
- }
- ul li a{
-   text-decoration: none;
- }
-li span{
-  border: 1px solid #fff;
-  padding: 10px 14px;
-  border-radius: 7px;
+ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 4% 3%;
 }
+ul li a{
+  text-decoration: none;
+}
+
 ul li a:hover{
   color: #ff00bf;
 }
 ul li span:hover{
   background: #625673;
 }
+li span{
+  border: 1px solid #fff;
+  padding: 10px 14px;
+  border-radius: 7px;
+}
+
 video{
   width: 100%;
   height: auto;
@@ -78,9 +90,17 @@ input{
   border-bottom: 1px solid #352384;
   width: 90%;
   font-size: 16px;
-  margin: 10px;
+  padding: 10px;
+  color: #333447;
 }
-input[type="button"]{
+.verify:focus{
+  background: url("../images/error.png");
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-position: right;
+  border-bottom: red;
+}
+input[type="submit"]{
   background: #ff00bf;
   color: #fff;
   border: none;
@@ -98,6 +118,7 @@ footer{
 .section-form{
   position: relative;
   top: 110px;
+  height: 700px;
 }
 .formulario{
   background: #fff;
@@ -127,7 +148,7 @@ footer{
   color: #b6b6b6;
   margin-left: 10px;
 }
-.input-box{
+.oculto{
   display: none;
 }
 .section-roud{
@@ -179,6 +200,13 @@ footer{
 .footer-nav a{
   display: block;
   margin-bottom: 14px;
+  text-decoration: none;
+}
+.footer-nav a:hover{
+  color: #ff00bf;
+}
+.footer-nav p:hover{
+  text-decoration: underline;
 }
 .footer-nav img{
   width: 170px;
